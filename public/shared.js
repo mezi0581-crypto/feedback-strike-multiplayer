@@ -1,4 +1,4 @@
-export const RULES={duration:150,maxPlayers:14,hitRadius:46,greatRadius:27,perfectRadius:12,chargeSeconds:1.05,cooldown:.6,rapidCooldown:.23,meeting:4,open:10};
+export const RULES={duration:150,maxPlayers:14,hitRadius:58,greatRadius:27,perfectRadius:12,chargeSeconds:1.3,cooldown:.6,rapidCooldown:.23,meeting:4,open:10};
 export const COLORS=['#eb744f','#639bbc','#9b81bd','#d8a244','#5eaa8c','#d87e9a','#6680bc','#ab9e54','#ba775e','#78aab0','#87765b','#ac82a4','#71a064','#9c8f7d'];
 export const EVENTS=[{type:'away',name:'🚽 화장실 탈주',warning:'팀장님이 잠시 자리를 비웁니다!',duration:2.5},{type:'coffee',name:'☕ 커피 방패',warning:'커피가 날아옵니다! 주황색 영역을 피하세요',duration:5},{type:'dodge',name:'🏃 걸으면서 볼게요',warning:'팀장님이 곧 빠르게 이동해요!',duration:5},{type:'meeting',name:'📅 긴급 회의',warning:'곧 접수가 3초간 중단돼요!',duration:3},{type:'rush',name:'💬 선착순 보너스',warning:'다음 3건은 피드백 +1!',duration:6},{type:'double',name:'🔥 폭풍 피드백',warning:'잠시 후 모두 피드백 2배!',duration:6}];
 export function trajectory(p,u){return {x:p.sx+(p.ex-p.sx)*u,y:p.sy+(p.ey-p.sy)*u-4*u*(1-u)*125}}
